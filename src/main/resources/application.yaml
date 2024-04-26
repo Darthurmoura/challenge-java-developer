@@ -2,5 +2,17 @@ spring:
   application:
     name: challenge-java-developer
 
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: ''
+    driverClassName: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  h2:
+    console.enabled: true
+
 server:
   port: 5000
